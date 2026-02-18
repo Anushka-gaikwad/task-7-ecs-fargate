@@ -6,7 +6,7 @@ resource "aws_instance" "strapi" {
   ami           = "ami-0c1fe732b5494dc14"
   instance_type = "t2.micro"
   key_name      = "Pearl-Thoughts"
-  vpc_security_group_ids = [aws_security_group.allow_http.id]
+  vpc_security_group_ids = [aws_security_group.allow_http_strapi.id]
 
   user_data = <<-EOF
               #!/bin/bash
