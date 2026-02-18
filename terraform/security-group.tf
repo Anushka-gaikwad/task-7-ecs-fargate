@@ -1,6 +1,6 @@
-resource "aws_security_group" "allow_http_strapi"
-" {
-  name = "allow_http_strapi"
+resource "aws_security_group" "allow_http_strapi" {
+  name        = "allow_http_strapi"
+  description = "Managed by Terraform"
 
   ingress {
     from_port   = 80
@@ -23,3 +23,4 @@ resource "aws_security_group" "allow_http_strapi"
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
+
