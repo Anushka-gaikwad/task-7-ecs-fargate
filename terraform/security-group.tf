@@ -1,5 +1,6 @@
-resource "aws_security_group" "allow_http" {
-  name = "allow_http"
+resource "aws_security_group" "allow_http_strapi"
+" {
+  name = "allow_http_strapi"
 
   ingress {
     from_port   = 80
