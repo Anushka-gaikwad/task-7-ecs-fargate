@@ -2,7 +2,7 @@ name: CI - Build & Push Strapi Docker
 
 on:
   push:
-    branches: [main]
+    branches: [master]
 
 jobs:
   build:
